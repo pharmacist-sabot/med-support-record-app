@@ -1,26 +1,25 @@
-# ระบบบันทึกมูลค่ายาสนับสนุน
+# Medication Support Record System
 
-โปรเจกต์นี้เป็นเว็บแอปพลิเคชันสำหรับบันทึกข้อมูลมูลค่ายาสนับสนุน พัฒนาขึ้นเพื่อช่วยให้เภสัชกรหรือบุคลากรทางการแพทย์สามารถบันทึกข้อมูลได้อย่างรวดเร็ว มาพร้อมดีไซน์ที่ทันสมัย สบายตา และรองรับการใช้งานบนทุกอุปกรณ์
+This project is a web application designed to record the value of medication support. It was developed to help pharmacists and medical personnel quickly log data, featuring a modern, user-friendly design that is responsive across all devices.
 
-## 🎉 คุณสมบัติหลัก (Features)
+## 🎉 Features
 
-- **หน้าฟอร์มที่ใช้งานง่าย:** ออกแบบมาเพื่อให้กรอกข้อมูลได้สะดวกและรวดเร็ว
-- **บันทึกข้อมูล Real-time:** เชื่อมต่อกับฐานข้อมูล Supabase ทำให้ข้อมูลถูกบันทึกทันที
-- **อนิเมชันสวยงาม:** ปุ่มบันทึกข้อมูลมีอนิเมชันเพื่อสร้างประสบการณ์ใช้งานที่ดี
-- **ดีไซน์ใหม่ล่าสุด:** ปรับโฉมใหม่ทั้งหมดในธีมสีม่วงพาสเทล (v1.1.0) ที่ดูสะอาดตาและทันสมัย
-- **รองรับทุกอุปกรณ์ (Mobile-First):** ดีไซน์ที่ปรับการแสดงผลตามขนาดหน้าจอได้อย่างสมบูรณ์ ไม่ว่าจะเปิดบนมือถือ แท็บเล็ต หรือเดสก์ท็อป
-- **การแจ้งเตือน:** ใช้ SweetAlert2 เพื่อแจ้งผลลัพธ์การบันทึกข้อมูล (สำเร็จ/ล้มเหลว) ให้ผู้ใช้ทราบ
+-   **Easy-to-Use Form Interface:** Designed for convenient and rapid data entry.
+-   **Real-time Data Saving:** Connects to a Supabase database, ensuring immediate data persistence.
+-   **Engaging Animations:** The save button includes animations for an enhanced user experience.
+-   **Mobile-First Responsiveness:** The design adapts perfectly to various screen sizes, whether accessed on mobile, tablet, or desktop.
+-   **Notifications:** Utilizes SweetAlert2 to provide users with feedback on data saving results (success/failure).
 
-## 🛠️ เทคโนโลยีที่ใช้ (Tech Stack)
+## 🛠️ Tech Stack
 
-- **Frontend:** HTML5, CSS3 (Flexbox, Media Queries), JavaScript (ES6+)
-- **Backend:** [Supabase](https://supabase.io/) (Database & Instant APIs)
-- **Deployment:** [Firebase Hosting](https://firebase.google.com/docs/hosting)
-- **Libraries:** [SweetAlert2](https://sweetalert2.github.io/)
+-   **Frontend:** HTML5, CSS3 (Flexbox, Media Queries), JavaScript (ES6+)
+-   **Backend:** [Supabase](https://supabase.io/) (Database & Instant APIs)
+-   **Deployment:** [Firebase Hosting](https://firebase.google.com/docs/hosting)
+-   **Libraries:** [SweetAlert2](https://sweetalert2.github.io/)
 
-## 🏁 การติดตั้งเพื่อพัฒนาต่อ (Getting Started)
+## 🏁 Getting Started (for Developers)
 
-หากคุณต้องการนำโปรเจกต์นี้ไปพัฒนาต่อ สามารถทำตามขั้นตอนต่อไปนี้ได้:
+If you wish to further develop this project, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
@@ -32,16 +31,16 @@
     cd med-support-record-app
     ```
 
-3.  **ตั้งค่า Supabase:**
-    - โปรเจกต์นี้ต้องใช้ Supabase API Key และ URL ส่วนตัวในการเชื่อมต่อ
-    - คุณต้องสร้างโปรเจกต์บน [Supabase](https://supabase.io/) และนำ `SUPABASE_URL` กับ `SUPABASE_KEY` มาใส่ในไฟล์ `config.js` (หรือไฟล์ที่คุณใช้จัดการการเชื่อมต่อ) เพื่อให้สามารถบันทึกข้อมูลได้
+3.  **Supabase Setup:**
+    -   This project requires a Supabase API Key and a private URL for connection.
+    -   You must create a project on [Supabase](https://supabase.io/) and insert your `SUPABASE_URL` and `SUPABASE_ANON_KEY` into the `config.js` file (or whichever file you use for connection management) to enable data saving.
 
-4.  **เปิดไฟล์ `index.html` บนเบราว์เซอร์เพื่อเริ่มต้นใช้งาน**
+4.  **Open `index.html` in your browser to start using the application.**
 
-## ✍️ ผู้พัฒนา (Author)
+## ✍️ Author
 
-- ภก.สุรเดช ประถมศักดิ์ 
+-   Pharm. Suradet Prathomsak
 
-## 📄 สัญญาอนุญาต (License)
+## 📄 License
 
 This project is licensed under the MIT License.
